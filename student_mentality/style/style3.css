@@ -1,0 +1,279 @@
+label {
+    display: block;
+  }
+  
+  :root {
+    --primary: rgba(255, 235, 59, 1);
+    --bg: rgba(0, 0, 0, 1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: url(1.jpg);
+    font-family: sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid #000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  
+  .navbar .navbar-logo {
+    margin-right: 585px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: var(--primary);
+  }
+  
+  .navbar .navbar-nav a {
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 2 1rem;
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #ffeb3b;
+    transition: all 0.7s ease;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.3rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.3s linear;
+  }
+  
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  header {
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav div a {
+    height: 10px;
+    line-height: 10px;
+    padding: 10px;
+    color: #000000;
+    font-size: 2rem;
+  }
+
+  /* Hero Section */
+  .hero .content {
+    max-width: 800px;
+    margin: 63px;
+    padding: 20px;
+    top: 10;
+    left: 0;
+    right: 0;
+  }
+  
+  .hero .content h2 {
+      font-family: var(--primary);
+      font-family: 'Poppins', sans-serif;
+      margin-top: 80px;
+      font-weight: 400;
+      font-size: 37px;
+      line-height: 1;
+      color: #000000;
+    }
+  
+    .hero .content h1 {
+      font-family: var(--primary);
+      font-size: 37px;
+      line-height: 1;
+      color:var(--primary);
+      font-weight: 700;
+    }
+  
+    .hero .content p {
+      font-size: 18px;
+      line-height: 1.2;
+      margin-top: 20px;
+      text-align: justify;
+    }
+  
+    .hero .row .hero-img img {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      right: 40px;
+      left: 900px;
+      top: 45px;
+      }
+
+      .oval-button {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 70px;
+        background-color: #ffeb3b;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        margin-top: 30px;
+      }
+      
+      .oval-button:hover {
+        background-color: #000000;
+        color: #fff;
+      }
+
+      /* Keluh Kesah */
+    .keluh .content {
+      max-width: 800px;
+      margin: 63px;
+      padding: 20px;
+      top: 10;
+      left: 0;
+      right: 0;
+    }
+
+      .keluh .row .content h2 {
+        font-family: var(--primary);
+        font-size: 37px;
+        margin-top: 50px;
+        line-height: 1;
+        color:black;
+        font-weight: 700;
+      }
+      
+      .keluh .row .content p {
+        margin-top:25px;
+        text-align: justify;
+        margin-left: 5px;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+
+      .keluh .row .keluh-img img {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        right: 40px;
+        left: 900px;
+        top: 0px;
+        }
+
+        /* Perencanaan */
+        .perencanaan .content {
+          max-width: 800px;
+          margin: 63px;
+          padding: 20px;
+          top: 10;
+          left: 0;
+          right: 0;
+        }
+
+        .perencanaan .row .content h2 {
+          font-family: var(--primary);
+          font-size: 37px;
+          margin-top: 110px;
+          line-height: 1;
+          color:black;
+          font-weight: 700;
+        }
+
+        .perencanaan .row .content p {
+          margin-top:25px;
+          text-align: justify;
+          margin-left: 5px;
+          font-size: 20px;
+          line-height: 1.2;
+        }
+
+        .perencanaan .row .perencanaan-img img {
+          position: absolute;
+          width: 500px;
+          height: 500px;
+          right: 40px;
+          left: 900px;
+          top: 400px;
+          }
+
+          /* Hiburan */
+        .hiburan .content {
+          max-width: 800px;
+          margin: 63px;
+          padding: 20px;
+          top: 10;
+          left: 0;
+          right: 0;
+        }
+
+        .hiburan .row .content h2 {
+          font-family: var(--primary);
+          font-size: 37px;
+          margin-top: 110px;
+          line-height: 1;
+          color:black;
+          font-weight: 700;
+        }
+
+        .hiburan .row .content p {
+          margin-top:25px;
+          text-align: justify;
+          margin-left: 5px;
+          font-size: 20px;
+          line-height: 1.2;
+        }
+
+        .hiburan .row .hiburan-img img {
+          position: absolute;
+          width: 500px;
+          height: 500px;
+          right: 40px;
+          left: 900px;
+          top: 800px;
+          }
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,229 @@
+label {
+  display: block;
+}
+
+:root {
+  --primary: rgba(255, 235, 59, 1);
+  --bg: rgba(0, 0, 0, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(1.jpg);
+  font-family: sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #000000;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar .navbar-logo {
+  margin-right: 585px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000000;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 2 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #ffeb3b;
+  transition: all 0.7s ease;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.3rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+header {
+  position: absolute;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header nav {
+  float: right;
+}
+
+header nav div a {
+  height: 10px;
+  line-height: 10px;
+  padding: 10px;
+  color: #000000;
+  font-size: 2rem;
+}
+
+.content h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 200px;
+  background-color: #ffeb3b;
+  padding: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 300px;
+}
+
+.content img {
+  float: left;
+  width: 400px;
+  margin-left: 50px;
+  margin-bottom: 1px;
+}
+
+.stres h1 {
+  font-family: var(--primary);
+  font-size: 24px;
+  line-height: 1;
+  color: black;
+  margin-left: 193px;
+  font-weight: 700;
+}
+
+.stres h4 {
+  margin-left: 400px;
+}
+
+/* .stres {
+  border-style: outset;
+  border-width: 5px;
+  border-radius: 15px;
+  padding: 20px;
+} */
+
+/* .ovt2 .content {
+  max-width: 800px;
+  margin: 63px;
+  padding: 20px;
+  top: 10;
+  left: 0;
+  right: 0;
+}
+
+.ovt2 .content h2 {
+  text-align: center;
+  margin-left: 50px;
+}
+
+.ovt2 .content .cta {
+  margin-top: 1rem;
+  display: inline;
+}
+
+.ovt2 .content .ovt2 h1 {
+  margin-left: 40px;
+} */
+
+/* .oval-button {
+  display: inline-block;
+  padding: 10px 95px;
+  border-radius: 70px;
+  background-color: #ffeb3b;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  margin-left: 350px;
+}
+
+.oval-button:hover {
+  background-color: #000000;
+  color: #fff;
+} */
+
+/* .hero .row .hero-img img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 40px;
+    left: 900px;
+    top: 45px;
+    } */
+
+/* Stres */
+/* .stres img {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 40px;
+  left: 190px;
+  top: 180px;
+}
+
+.stres h1 {
+  font-family: var(--primary);
+  font-size: 24px;
+  line-height: 1;
+  color: black;
+  margin-top: 240px;
+  margin-left: 290px;
+  font-weight: 700;
+}
+
+.stres ol {
+  margin-left: 600px;
+  margin-top: 50px
+}
+
+.motivasi h1 {
+  font-family: var(--primary);
+  font-size: 37px;
+  line-height: 1;
+  color: black;
+  margin-left: 210px;
+  font-weight: 700;
+} */
